@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input  } from '@angular/core';
 import { Word } from '../Word';
 import { WORDS } from '../words';
 
@@ -9,8 +9,8 @@ import { WORDS } from '../words';
 })
 export class WordListComponent implements OnInit {
 
+  @Input() selectedLetter;
   @Output() wordClicked = new EventEmitter<Word>();
-    
   words = WORDS;
   selectedWord: Word;
 

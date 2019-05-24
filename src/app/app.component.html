@@ -1,8 +1,8 @@
-<app-navbar></app-navbar>
+<app-navbar (letterClicked)="letterClicked($event)" ></app-navbar>
 <div class="word-list">
-        <app-word-list (wordClicked)="wordClicked($event)" #wordlist></app-word-list>
+        <app-word-list (wordClicked)="wordClicked($event)"  [selectedLetter]="selectedLetter" #wordlist></app-word-list>
 </div>
 
 <div class="word-info">
-    <app-word-info [selectedWord]="selected" #wordinfo></app-word-info>
+    <app-word-info [selectedWord]="selectedWord" #wordinfo></app-word-info>
 </div>

@@ -1,9 +1,4 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
-
-import { WordListComponent } from './word-list/word-list.component';
-import { WordInfoComponent } from './word-info/word-info.component';
-
-import { Observable, fromEvent } from 'rxjs';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +8,16 @@ import { Observable, fromEvent } from 'rxjs';
 export class AppComponent{
   title = 'Enciclopedia';
 
-  public selected;
+  public selectedWord;
+  public selectedLetter;
 
   wordClicked(obj) {
-    this.selected = obj;
-    console.log(obj)
+    this.selectedWord = obj;
+    //console.log(obj)
+  }
+  letterClicked(obj) {
+    this.selectedLetter = obj;
+    //console.log(obj)
   }
 
 }

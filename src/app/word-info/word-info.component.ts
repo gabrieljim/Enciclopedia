@@ -6,12 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./word-info.component.css']
 })
 export class WordInfoComponent implements OnInit {
-
+  @Input() selectedWord;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  @Input() selectedWord;
 
 }
