@@ -8,13 +8,13 @@ import { WORDS } from '../words';
   styleUrls: ['./word-info.component.css']
 })
 export class WordInfoComponent implements OnInit {
-
+  @Input() selectedWord;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  @Input() selectedWord;
 
   onSelect(word: String): void{
       for (var i in WORDS) {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  @Output() letterClicked = new EventEmitter<any>();
+  letters=["A","B","C","E","F","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+  selectedLetter;
   constructor() { }
 
   ngOnInit() {
   }
+
+  onSelect(letter): void{
+    this.selectedLetter=letter;
+    this.letterClicked.emit(letter);
+  }
+  
 
 }
