@@ -5,4 +5,9 @@
     <p class="def">{{selectedWord.def}}</p>
     <h3>Traducción al ingles:</h3>
     <p class="trans">{{selectedWord.trans}}</p>
+    <ul class = "rel">
+
+        <li style="color:darkcyan; margin-left:0px; cursor:auto;">Relacionado:</li>
+        <li *ngFor="let rela of selectedWord.related" (click)="onSelect(rela)">{{rela}}</li>
+    </ul>
 </div>

@@ -6,7 +6,8 @@ ul li{
     color: rgb(45,45,45);
     background-color: lightgray;
     font-size:20px;
-    padding:10px
+    padding:10px;
+    cursor:pointer;
 }
 
 ul li:hover{

@@ -1,8 +1,13 @@
 
 div.word-list{
-    height:91vh;
+    height:91.9vh;
     width:25vw;
     overflow-y:scroll;
     float:left;
+}
+
+div.word-info {
+    height:91.9vh;
+    overflow-y: scroll;
 }
 

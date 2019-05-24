@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Word } from '../Word';
+import { WORDS } from '../words';
 
 @Component({
   selector: 'app-word-info',
@@ -14,4 +16,12 @@ export class WordInfoComponent implements OnInit {
 
   @Input() selectedWord;
 
+  onSelect(word: String): void{
+      for (var i in WORDS) {
+          if (WORDS[i].name === word){
+              this.selectedWord = WORDS[i];
+              break;
+          }
+      }
+  }
 }
