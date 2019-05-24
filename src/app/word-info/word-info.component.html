@@ -1,5 +1,8 @@
-<div *ngIf="selectedWord">
-    <h2>Letra es {{selectedWord.name}}</h2>
-    <p>{{selectedWord.def}}</p>
-    <p>{{selectedWord.trans}}</p>
+<div class="info" *ngIf="selectedWord">
+    <h2>{{selectedWord.name}}</h2>
+    <hr>
+    <h3>Definición:</h3>
+    <p class="def">{{selectedWord.def}}</p>
+    <h3>Traducción al ingles:</h3>
+    <p class="trans">{{selectedWord.trans}}</p>
 </div>
