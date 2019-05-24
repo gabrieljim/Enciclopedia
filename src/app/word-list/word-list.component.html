@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let word of words" [class.selected]="word===selectedWord" (click)="onSelect(word)">
+        <p>{{word.name}}</p>
+    </li>
+</ul>

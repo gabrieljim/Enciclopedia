@@ -1,0 +1,19 @@
+nav{
+    margin:0;
+    padding:20px 0;
+    width:100%;
+    background-color:black;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin:0;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color:white;
+}

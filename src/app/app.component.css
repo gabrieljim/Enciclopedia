@@ -1,0 +1,8 @@
+
+div.word-list{
+    height:91vh;
+    width:25vw;
+    overflow-y:scroll;
+    float:left;
+}
+

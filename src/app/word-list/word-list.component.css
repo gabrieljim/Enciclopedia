@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+}
+
+ul li{ 
+    background-color: lightgray;
+    font-size:20px;
+    padding:10px
+}
+
+ul li:hover{
+    background-color: gray;
+}
+
+.selected {
+    background-color: gray !important;
+}
