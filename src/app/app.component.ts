@@ -12,4 +12,12 @@ import { Observable, fromEvent } from 'rxjs';
 })
 export class AppComponent{
   title = 'Enciclopedia';
+
+  public selected;
+
+  wordClicked(obj) {
+    this.selected = obj;
+    console.log(obj)
+  }
+
 }

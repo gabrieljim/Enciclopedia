@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
 import { Word } from '../Word';
 import { WORDS } from '../words';
 
@@ -8,6 +8,8 @@ import { WORDS } from '../words';
   styleUrls: ['./word-list.component.css']
 })
 export class WordListComponent implements OnInit {
+
+  @Output() wordClicked = new EventEmitter<Word>();
     
   words = WORDS;
   selectedWord: Word;
@@ -18,6 +20,7 @@ export class WordListComponent implements OnInit {
   }
 
   onSelect(word: Word): void{
-      this.selectedWord=word;
+    this.selectedWord=word;
+    this.wordClicked.emit(word);
   }
 }
