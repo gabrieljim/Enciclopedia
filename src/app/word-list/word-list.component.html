@@ -1,6 +1,5 @@
 <ul>
-    {{selectedLetter}}
-    <li *ngFor="let word of words" [class.selected]="word===selectedWord" (click)="onSelect(word)">
+    <li *ngFor="let word of filteredWords" [class.selected]="word===selectedWord" (click)="onSelect(word)">
         <p><b>{{word.name}}</b></p>
     </li>
 </ul>

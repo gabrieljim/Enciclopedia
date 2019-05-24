@@ -8,7 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   @Output() letterClicked = new EventEmitter<any>();
-  letters=["A","B","C","E","F","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+  letters=["Todas","A","B","C","E","F","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
   selectedLetter;
   constructor() { }
 

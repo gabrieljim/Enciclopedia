@@ -1,5 +1,6 @@
 
 div.word-list{
+    background-color: lightgray;
     height:91.9vh;
     width:25vw;
     overflow-y:scroll;

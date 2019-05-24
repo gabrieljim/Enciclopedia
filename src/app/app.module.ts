@@ -11,7 +11,7 @@ import { WordInfoComponent } from './word-info/word-info.component';
     AppComponent,
     NavbarComponent,
     WordListComponent,
-    WordInfoComponent
+    WordInfoComponent,
   ],
   imports: [
     BrowserModule
