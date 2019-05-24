@@ -1,4 +1,5 @@
 <ul>
+     <p *ngIf="filteredWords.length<1" class="Vacio">No se encontraron registros</p>
     <li *ngFor="let word of filteredWords" [class.selected]="word===selectedWord" (click)="onSelect(word)">
         <p><b>{{word.name}}</b></p>
     </li>

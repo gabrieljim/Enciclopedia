@@ -2,20 +2,21 @@ ul {
     list-style: none;
 }
 
-ul li{ 
+ul li, .Vacio{ 
     color: rgb(45,45,45);
-    background-color: lightgray;
     font-size:20px;
     padding:10px;
-    cursor:pointer;
 }
 
 ul li:hover{
     color: white;
     background-color: darkcyan;
+    cursor:pointer;
 }
 
 .selected {
     color:white !important;
     background-color: darkcyan !important;
 }
+
+
