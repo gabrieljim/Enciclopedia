@@ -1,8 +1,8 @@
 <nav>
 
     <ul>
-        <li *ngFor="let letter of letters">
-            <a href="#" (click)="onSelect(letter)">{{letter}}</a>
+        <li *ngFor="let letter of letters" (click)="onSelect(letter)">
+            <p>{{letter}}</p>
         </li>
     </ul>
 
