@@ -12,3 +12,11 @@ div.word-info {
     overflow-y: scroll;
 }
 
+div.informacion {
+    position:fixed;
+    top:56px;
+    right:15px;
+    border: 1px solid lightgray;
+    padding:5px;
+    background-color: white;
+}

@@ -10,7 +10,7 @@ ul li, .Vacio{
 
 ul li:hover{
     color: white;
-    background-color: darkcyan;
+    background-color: #06a0a0;
     cursor:pointer;
 }
 
